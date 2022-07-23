@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="thiago campos">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 7</title>
+</head>
+<body>
+    <p>DESAFIO: Faça um Programa que leia três números e mostre o maior e o menor deles.</p>
+    <p id="msg">:</p>
+
+<script>
+    let n1 = Number(prompt('Digite um número: '));
+    let n2 = Number(prompt('Digite um outro número: '));
+    let n3 = Number(prompt('Digite um outro número: '));
+    let msg = document.getElementById('msg');
+
+        if((n1 > n2) && (n1 > n3)){
+            var maior = n1;
+        }else if(n2 > n1 && n2 > n3){
+            var maior = n2;
+        }else{
+            var maior = n3; 
+        }
+            if((n1 < n2) && (n1 < n3)){
+                var menor = n1;
+            }else if(n2 < n1 && n2 < n3){
+                var menor = n2;
+            }else{
+                var menor = n3; 
+            }
+
+    msg.innerHTML = `O maior número é ${maior} e o menor ${menor}`
+</script>
+</body>
+</html>

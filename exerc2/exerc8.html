@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="thiago campos">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 8</title>
+</head>
+<body>
+    <p>
+        DESAFIO: Faça um programa para a leitura de duas notas parciais de um aluno. O programa deve calcular a média alcançada por aluno e apresentar:
+        a) A mensagem "Aprovado", se a média alcançada for maior ou igual a sete;
+        b) A mensagem "Reprovado", se a média for menor do que sete;
+        c) A mensagem "Aprovado com Distinção", se a média for igual a dez.
+       </p>
+    <p id="msg">:</p>
+
+<script>
+    let nota1 = Number(prompt('Nota da primeira prova: '));
+    let nota2 = Number(prompt('Nota da segunda prova: '));
+    let media = ((nota1 + nota2) / 2);
+    let msg = document.getElementById('msg');
+        if(media == 10){
+            msg.innerHTML = 'O aluno(a) foi aprovado com distinção, com a média ' + media;
+        }else if(media < 7){
+            msg.innerHTML = 'O aluno(a) foi reprovado por não alcançar a média, com a média ' + media;
+        }else{
+            msg.innerHTML = 'O aluno(a) foi aprovado com a média ' + media;
+        }
+
+
+</script>
+</body>
+</html>

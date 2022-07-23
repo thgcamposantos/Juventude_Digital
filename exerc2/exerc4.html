@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="thiago campos">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 4</title>
+</head>
+<body>
+    <p>DESAFIO:  Faça um Programa que verifique se uma letra digitada é "F" ou "M". Conforme a letra escrever: F - Feminino, M - Masculino, Sexo Inválido. Digite com caractere maísculo</p>
+    <p id="msg">:</p>
+
+<script>
+    let sexo = prompt('Digite o seu sexo: M - Masculino, F - Feminino , O - Outro')
+    let msg = document.querySelector('p#msg');
+        switch(sexo){
+            case 'M':
+                msg.innerHTML = 'O usuário digitou M, Masculino';
+            break;
+            case 'F':
+                msg.innerHTML = 'O usuário digitou F, Feminino';
+            break;
+            case 'O':
+                msg.innerHTML = 'O usuário digitou O, Outro';
+            break;
+            default:
+                msg.innerHTML = 'Valor não existe';
+        }
+    
+</script>
+</body>
+</html>
