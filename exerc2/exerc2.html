@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="thiago campos">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 1</title>
+</head>
+<body>
+    <p>Desafio: Faça um Programa que peça um valor e mostre na tela se o valor é positivo ou negativo.</p>
+    <p id="msg">:</p>
+
+<script>
+    const numero = Number(prompt('Digite um número: '));
+    let msg = document.querySelector('p#msg');
+        if(numero == 0){
+            msg.innerHTML = 'Número digitado é nulo'
+        }else if(numero > 0){
+            msg.innerHTML = 'Numero digitado é positivo'
+        }else{
+            msg.innerHTML = 'Número digitado é negativo'
+        }
+</script>
+</body>
+</html>
