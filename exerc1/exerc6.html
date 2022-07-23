@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 6</title>
+</head>
+<body>
+    <div id="msg"></div>
+
+
+<script>
+    /*
+        PERGUNTA: Faça um Programa que pergunte quanto você ganha por hora e o número de horas trabalhadas no mês. Calcule e mostre o total do seu salário no referido mês
+    */
+
+   let ganho_hora = Number(prompt('Quanto você ganha por hora: '))
+   let dias_trabalho = Number(prompt('Dias trabalhados: '));
+    let salario_total = ganho_hora * dias_trabalho;
+    let msg = document.getElementById('msg');
+    msg.innerHTML = 'O seu salário é: R$' + salario_total + ',00'
+</script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+<script>
+    /*
+        PERGUNTA: aça um programa que peça o tamanho de um arquivo para download (em MB) e a velocidade de um link de Internet (em Mbps), calcule e informe o tempo aproximado de download do arquivo usando este link (em minutos).     
+    */
+    let tamanho = Number(prompt('Tamanho do arquivo (MB): '))
+    let velocidade = Number(prompt('Velocidade de Internet (MBps): '))
+    let final = (tamanho / velocidade) * 60;
+    alert('Tempo aproximado de download: em minutos ' + final.toFixed(2))
+
+
+</script>
+</body>
+</html>

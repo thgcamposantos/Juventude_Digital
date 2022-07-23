@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        .bloco{
+            justify-content: center;
+            /* margin: 40% 0 0 20%;  */
+            border: solid 1px white;
+            border-radius: 10px;
+            margin: 15% auto;
+            width: 400px;
+            padding: 25px;
+            background-color: beige;
+        }
+        h1{
+            text-transform: uppercase;
+            text-align: center;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="bloco">
+        <h1 id="msg_nome"></h1>
+        <p>Depedendo do horário a mensagem será 'Bom Dia' , 'Boa tarde' , 'Boa noite'</p>
+        <p id="msg"></p>
+    </div>
+
+<script>
+    /*
+        PERGUNTA:  Faça um programa que peça um nome e mostre a mensagem "Boa noite [nome]"
+    */
+    const nome = String(prompt('Nome: '));
+    let hora_geral = new Date();
+    let hora_exata = hora_geral.getHours();
+    let minuto_exata = hora_geral.getMinutes();
+    let msg_nome = document.getElementById('msg_nome');
+        msg_nome.innerHTML = 'Ola ' + nome;
+
+        if(hora_exata >= 0 && hora_exata < 12){
+            var msg = document.getElementById('msg');
+            msg.innerHTML = 'Bom dia e são examente ' + hora_exata + ':' + minuto_exata;
+        }else if(hora_exata >= 12 && hora_exata < 18){
+            var msg = document.getElementById('msg');
+            msg.innerHTML = 'Boa tarde e são examente ' + hora_exata + ':' + minuto_exata;
+        }else{
+            var msg = document.getElementById('msg');
+            msg.innerHTML = 'Boa noite e são examente ' + hora_exata + ':' + minuto_exata;
+        }
+
+
+</script>
+</body>
+</html>
