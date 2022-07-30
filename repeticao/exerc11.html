@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 4 - Lista 2</title>
+    <style>
+        p:nth-child(1){
+            margin-bottom: 35px;
+        }
+    </style>
+</head>
+<body>
+    <p>
+        Faça um programa que calcule o mostre a média aritmética de N notas.
+    </p>
+    <p id="msg"></p>
+
+<script>
+    let quantidade_numero = Number(prompt('Quantos números deseja calcular'))
+    let media = 0;
+    let soma = 0;
+    let msg = document.getElementById('msg')
+        for(let i = 1; i <= quantidade_numero; i++){
+            var notas = Number(prompt('Digite a nota: '))
+            soma += notas;
+        }
+        media = soma / quantidade_numero;
+        msg.innerHTML = 'A média das notas foram: ' + media
+</script>
+</body>
+</html>
