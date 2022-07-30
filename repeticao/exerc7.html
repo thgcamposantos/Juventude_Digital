@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 7</title>
+    <style>
+        p:nth-child(1){
+            margin-bottom: 35px;
+        }
+    </style>
+</head>
+<body>
+    <p>
+        Desenvolva um gerador de tabuada, capaz de gerar a tabuada de qualquer número inteiro entre 1 a 10. O usuário deve informar de qual numero ele deseja ver a tabuada. A saída deve ser conforme o exemplo abaixo:.
+    </p>
+    <p id="msg"></p>
+
+<script>
+    let msg = document.getElementById('msg');
+    let numero = Number(prompt('Digite um número: '));
+        for(let i = 0; i <= 10; i++){
+            msg.innerHTML += numero + ' x ' + i + ' = ' + (numero * i) + '<br>'
+        }
+</script>
+</body>
+</html>

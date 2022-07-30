@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 3</title>
+    <style>
+        p:nth-child(1){
+            margin-bottom: 35px;
+        }
+    </style>
+</head>
+<body>
+    <p>
+        Faça um programa que receba dois números inteiros e gere os números inteiros que estão no intervalo compreendido por eles.
+    </p>
+    <p id="msg"></p>
+
+<script>
+    let n1 = Number(prompt('Diigte um número'));
+    let n2 = Number(prompt('Digite um outro número: '));
+    let msg = document.getElementById('msg');
+
+        if(n1 == n2){
+            msg.innerHTML = 'Iguais'      
+        }else if(n1 < n2){
+            for(let i = n1; i <= n2; i++){
+                msg.innerHTML += i + ' , '
+            }
+        }else{
+            for(let i = n1; i >= n2; i--){
+                msg.innerHTML += i + ' , '
+            }
+        }
+</script>
+</body>
+</html>
