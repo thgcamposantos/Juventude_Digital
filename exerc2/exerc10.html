@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="thiago campos">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 2 - Lista 2</title>
+    <style>
+        p[id='msg']{
+            font-family: cursive;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            font-size: 35px;
+            letter-spacing: 1.5;
+            text-transform: uppercase;
+            justify-items: center;
+            margin-top: 35px;
+        }
+    </style>
+</head>
+<body>
+    <p>
+        Faça um Programa que peça a hora e apresente uma mensagem de "Bom dia", "Boa tarde" ou "Boa noite" conforme a hora informada.        
+    </p>
+    <p id="msg">:</p>
+
+<script>
+    let horario = Number(prompt('Digite o horário no momento, somente o horário'));
+    let msg = document.getElementById('msg');
+    let corpo = document.querySelector('body');
+        if((horario >= 0) && (horario < 12)){
+            corpo.style.background =  'black';
+            msg.innerHTML = 'Bom dia';
+            msg.style.color = 'white';
+        }else if((horario > 12) && horario < 18){
+            msg.innerHTML = 'Boa tarde'
+            corpo.style.background = 'gray';
+            corpo.style.color = 'black'
+        }else{
+            corpo.style.background =  'white';
+            msg.innerHTML = 'Boa noite'
+        }
+
+
+</script>
+</body>
+</html>

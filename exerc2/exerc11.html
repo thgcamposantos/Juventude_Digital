@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="thiago campos">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 3 - Lista 2</title>
+    <style>
+        
+    </style>
+</head>
+<body>
+    <p>
+        Faça um Programa que leia um número e exiba o dia correspondente da semana. (1-Domingo, 2- Segunda, etc.), se digitar outro valor deve aparecer valor inválido.        
+    </p>
+    <p id="msg">:</p>
+
+<script>
+    // let semana = new Date()
+    // let dia = semana.getDay()
+    // console.log(dia)
+    let dia = Number(prompt('Informe o dia da semana (em número, ex: Domingo: 1).'))
+    let msg = document.getElementById('msg')
+        switch(dia){
+            case 1: 
+                msg.innerHTML = 'Domingo';
+            break;
+            case 2: 
+            msg.innerHTML = 'Segunda-feira';
+            break;
+            case 3: 
+            msg.innerHTML = 'Terça-feira';
+            break;
+            case 4: 
+            msg.innerHTML = 'Quarta-feira';
+            break;
+            case 5: 
+            msg.innerHTML = 'Quinta-feira';
+            break;
+            case 6: 
+            msg.innerHTML = 'Sexta-feira';
+            break;
+            case 7: 
+            msg.innerHTML = 'Sábado';
+            break;
+            default:
+            msg.innerHTML = 'ERRO. Só é válido os números de 1 a 7';
+        }
+</script>
+</body>
+</html>
