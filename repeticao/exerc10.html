@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 3 - Lista 2</title>
+    <style>
+        p:nth-child(1){
+            margin-bottom: 35px;
+        }
+    </style>
+</head>
+<body>
+    <p>
+        Faça um programa que peça uma nota, entre zero e dez. Mostre uma mensagem caso o valor seja inválido e continue pedindo até que o usuário informe um valor válido.
+    </p>
+    <p id="msg"></p>
+
+<script>
+    var nota = Number(prompt('Digite uma nota: '));
+    let msg = document.getElementById('msg')
+            if(nota > 10){
+                var nota = Number(prompt('Digite uma nota: '));
+            }
+
+        msg.innerHTML = nota
+</script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 2 - Lista 2</title>
+    <style>
+        p:nth-child(1){
+            margin-bottom: 35px;
+        }
+    </style>
+</head>
+<body>
+    <p>
+        A série de Fibonacci é formada pela seqüência 1,1,2,3,5,8,13,21,34,55,... Faça um programa capaz de gerar a série até o enésimo termo.
+    </p>
+    <p id="msg"></p>
+
+<script>
+    var n1 = 1
+    var n2 = 1
+    let msg = document.getElementById('msg')
+    msg.innerHTML = n1 + ' ' + n2
+        for(let i = 1; i <= 8; i++){
+            var n1 = n2 + n1
+            var n2 = n1 + n2
+                msg.innerHTML += ' ' + n1 + ' ' + n2
+        }
+</script>
+</body>
+</html>

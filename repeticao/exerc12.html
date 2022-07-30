@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio 5 - Lista 2</title>
+    <style>
+        p:nth-child(1){
+            margin-bottom: 35px;
+        }
+    </style>
+</head>
+<body>
+    <p>
+        Faça um programa que calcule o fatorial de um número inteiro fornecido pelo usuário. Ex.: 5!=5.4.3.2.1=120. A saída deve ser conforme o exemplo abaixo:
+    </p>
+    <p id="msg"></p>
+
+<script>
+    let msg = document.getElementById('msg');
+    var numero = Number(prompt('Digite um número: '));
+    var resultado = 1;
+    msg.innerHTML += numero + '! = ';
+        for(var i = numero - 1; i >= 1; i--){
+            msg.innerHTML += " " + i + ' . ' 
+            resultado = resultado * i; 
+        }
+        msg.innerHTML += '<br>' + (resultado * numero);
+</script>
+</body>
+</html>
